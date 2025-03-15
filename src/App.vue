@@ -10,7 +10,7 @@ import footerApp from './components/footer.vue'
 <template>
 <navbar />
 <div class="principal_info">
-  <img src="../public/img/asfixiadero__nav.jpg" alt="" srcset="">
+  <img src="../public/img/asfixiadero__nav.jpg" alt="img_prinsipal" srcset="">
   <div class="text_info">
     <p>Convivencia en Movimiento Un Espacio para Todos</p>
   </div>
