@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <div class="img_footer"> <img src="../../public/img/sabackground.png" alt="" srcset=""> </div>
+    <div class="img_footer"> <img src="../../public/img/sabackground.png" alt="s" srcset=""> </div>
 
     <footer>
         <div class="right">
