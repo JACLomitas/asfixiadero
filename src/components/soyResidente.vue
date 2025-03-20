@@ -1,187 +1,223 @@
 <script>
 export default {
-    name: 'soyResidente'
+    name: 'SoyResidente'
 }
 </script>
+
 <template>
-    <div class="residente_container">
+    <div class="residente-container">
 
-        <div class="residente_background">
-            <h2>Residentes</h2>
-
-            <div class="residente_item1">
-                <img src="../../public/img/justest.jpeg" alt="" srcset="">  
-
-                <div class="residente_item2">
-                <h3>Espacio para Residentes: Tu Movilidad es Nuestra Prioridad</h3>
+        <section class="hero">
+            <div class="hero-image-container">
+                <img src="../../public/img/justest.jpeg" alt="Vehículos en Sabaneta" class="hero-image">
+                <div class="hero-content">
+                    <h1>Residentes</h1>
+                    <p>Tu movilidad es nuestra prioridad</p>
                 </div>
             </div>
-            </div>
+        </section>
 
-        <div class="residente_items">
-                <div class="explicaciones">
-                    <h4>¿Porque necesitamos Vehiculos?</h4>
+        <section class="info-section">
+            <div class="text-container">
+                <h2>¿Por qué necesitamos Vehículos?</h2>
+                <p>Para muchos de nosotros, los carros y las motos son la única forma de llegar al trabajo a tiempo, especialmente si vivimos en áreas más alejadas.</p>
+                <p>Necesitamos llevar a nuestros hijos a la escuela, hacer compras grandes o visitar a familiares que viven lejos. El transporte público no siempre es una opción viable.</p>
 
-                    <p>Para muchos de nosotros, los carros y las motos son la única forma de llegar al trabajo a tiempo, especialmente si vivimos en áreas más alejadas.</p>
-                    <p>Necesitamos llevar a nuestros hijos a la escuela, hacer compras grandes o visitar a familiares que viven lejos. El transporte público no siempre es una opción viable.</p>
-                </div>
-                <p>Para nosotros es fundamental seguir estas medidas de seguridad:</p>
-                <ul>
-                    <li>Reduce la velocidad en zonas con peatones.</li>
+                <h2>Para nosotros es fundamental seguir estas medidas de seguridad:</h2>
+                <ul class="guidelines">
+                    <li>Reduce la velocidad en zonas peatonales.</li>
                     <li>Utiliza el claxon solo en caso de emergencia.</li>
                     <li>Estaciona en lugares permitidos.</li>
                 </ul>
+
+                <div class="compromiso">
+                    <h2>Nuestro Compromiso: Movilidad Segura y Respetuosa</h2>
+                </div>
             </div>
+        </section>
+
     </div>
 </template>
 
 <style scoped>
-.residente_container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
+/* Estilos Generales - Mobile First */
+.residente-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0 auto;
+    padding: 1rem; /* Reduje el padding general para móvil */
+    box-sizing: border-box;
     text-align: center;
-    
+    max-width: 100%;   /* Ocupar todo el ancho en móvil */
 }
 
-.residente_container h2 {
-    margin-bottom: 22px;
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 0.1rem; /* Reduje el margen inferior para móvil */
+    padding: 2rem 0rem; /* Reduje el padding para móvil */
 }
 
-.residente_item1 {
-    margin-bottom: 20px;
+.hero-image-container {
+    position: relative;
+    overflow: hidden;
 }
 
-.residente_item1 img {
-    margin-bottom: 12px;
-    border-radius: 10px;
-}
-
-.residente_background {
-    background-color: rgb(17, 133, 23);
+.hero-image {
     width: 100%;
-    padding: 10px;
-    color: #fff;
-    margin-bottom: 10px;
+    height: 250px;       /* Reduje la altura para móvil */
+    object-fit: cover;
+    filter: brightness(60%);
 }
 
-.residente_items {
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hero-content h1 {
+    font-size: 2rem;      /* Reduje el tamaño de fuente para móvil */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Reduje el margen inferior para móvil */
+}
+
+.hero-content p {
+    font-size: 1rem;      /* Reduje el tamaño de fuente para móvil */
+}
+
+/* Info Section */
+.info-section {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
+    flex-direction: column;
+    padding: 1.5rem;      /* Reduje el padding para móvil */
+    max-width: 100%;     /* Ocupar todo el ancho en móvil */
+    margin: 0 auto;
+    text-align: left;
 }
 
+.text-container {
+    text-align: left;
+    width: 100%;
+}
+
+.text-container h2 {
+    font-size: 1.7rem;    /* Reduje el tamaño de fuente para móvil */
+    color: #212529;
+    margin-bottom: 0.7rem; /* Reduje el margen inferior para móvil */
+}
+
+.text-container p {
+    font-size: 1rem;      /* Reduje el tamaño de fuente para móvil */
+    line-height: 1.5;
+    color: #495057;
+    margin-bottom: 1rem;   /* Reduje el margen inferior para móvil */
+}
+
+.guidelines {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;   /* Reduje el margen inferior para móvil */
+}
+
+.guidelines li {
+    padding: 0.4rem 0;    /* Reduje el padding vertical para móvil */
+    border-bottom: 1px solid #dee2e6;
+    position: relative;
+    padding-left: 1.8rem;  /* Reduje el espacio para el "check" para móvil */
+    font-size: 1rem;      /* Reduje el tamaño de fuente para móvil */
+}
+
+.guidelines li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #F39C12; /* Naranja Sabaneta */
+    font-weight: bold;
+    font-size: 1.2rem;  /* Reduje el tamaño de fuente para móvil */
+}
+
+.compromiso {
+    padding: 1rem;       /* Reduje el padding para móvil */
+    background-color: #F9E79F; /* Amarillo Claro */
+    border-radius: 8px;
+}
+
+.compromiso h2 {
+    font-size: 1.7rem;    /* Reduje el tamaño de fuente para móvil */
+    margin-bottom: 0.7rem; /* Reduje el margen inferior para móvil */
+}
+
+.compromiso p {
+    font-size: 1rem;      /* Reduje el tamaño de fuente para móvil */
+}
+
+/* Media Queries para Responsividad */
+/* Estilos para Tablets (landscape) */
+@media (min-width: 768px) and (orientation: landscape) {
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+
+    .info-section {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .text-container {
+        width: 50%;
+    }
+
+    /* Asegurar que las guidelines estén alineadas a la izquierda en tablet */
+    .guidelines {
+        text-align: left;
+    }
+    .hero-image {
+        height: 300px;
+    }
+}
+
+/* Estilos para Desktop */
+@media (min-width: 1024px) {
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .hero-content p {
+        font-size: 1.6rem;
+    }
+
+    .info-section {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .text-container {
+        width: 50%;
+    }
+    .hero-image {
+        height: 400px;
+    }
+
+    /* Asegurar que las guidelines estén alineadas a la izquierda en desktop */
+    .guidelines {
+        text-align: left;
+    }
+}
 </style>
-
-<!-- <script>
-export default {
-    name: 'soyResidente'
-}
-</script>
-<template>
-    <div class="residente_container">
-
-        <h2>Residente</h2>
-
-        <div class="residente_background">
-            <img class="size-stroke size-right" src="../../public/img/paint_stroke_1.png" alt="" srcset="">
-            <img class="size-stroke size-left" src="../../public/img/paint_stroke_2.png" alt="" srcset="">
-
-            <div class="residente_item1">
-                <img src="../../public/img/justest.jpeg" alt="" srcset="">  
-
-                <div class="residente_item2">
-                <h3>Espacio para Residentes: Tu Movilidad es Nuestra Prioridad</h3>
-                </div>
-            </div>
-            </div>
-
-        <div class="residente_items">
-                <div class="explicaciones">
-                    <h4>¿Porque necesitamos Vehiculos?</h4>
-
-                    <p>Para muchos de nosotros, los carros y las motos son la única forma de llegar al trabajo a tiempo, especialmente si vivimos en áreas más alejadas.</p>
-                    <p>Necesitamos llevar a nuestros hijos a la escuela, hacer compras grandes o visitar a familiares que viven lejos. El transporte público no siempre es una opción viable.</p>
-                </div>
-                <p>Para nosotros es fundamental seguir estas medidas de seguridad:</p>
-                <ul>
-                    <li>Reduce la velocidad en zonas con peatones.</li>
-                    <li>Utiliza el claxon solo en caso de emergencia.</li>
-                    <li>Estaciona en lugares permitidos.</li>
-                </ul>
-            </div>
-    </div>
-</template>
-
-<style scoped>
-.residente_container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-    text-align: center;
-    
-}
-
-.residente_container h2 {
-    color: black;
-    margin-bottom: 22px;
-}
-
-.residente_item1 {
-    margin-bottom: 20px;
-}
-
-.residente_item1 img {
-    margin-bottom: 12px;
-    border-radius: 10px;
-}
-
-.residente_background {
-    /* background-color: rgb(17, 133, 23); */
-    width: 100%;
-    padding: 10px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.residente_item2 {
-    color: black;
-}
-
-.residente_items {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-
-.size-stroke {
-    width: 250px;
-    height: 150px;
-    position: absolute;
-    z-index: -1;
-}
-
-.size-right {
-    position: absolute;
-    bottom: -40em;
-    left: 120px;
-    rotate: 160deg;
-}
-.size-left {
-    position: absolute;
-    bottom: -31em;
-    right: 8em;
-}
-
-</style> -->
