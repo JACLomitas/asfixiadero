@@ -12,10 +12,11 @@ export default {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled">Disabled</a>
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <a class="nav-link" href="#">Somos</a>
+        <a class="nav-link" href="#">Residentes</a>
+        <a class="nav-link" href="#">Deportistas</a>
+        <a class="nav-link" href="#">Solucion</a>
         </div>
     </div>
 </div>

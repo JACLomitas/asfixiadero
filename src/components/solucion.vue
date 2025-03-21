@@ -30,11 +30,10 @@ export default {
         <section class="soluciones">
             <h2>Propuestas para un Futuro en Armonía:</h2>
             <ul class="lista-soluciones">
-                <li><strong>Más Espacios Seguros:</strong> Ampliar aceras y crear ciclovías protegidas para peatones y deportistas.</li>
-                <li><strong>Horarios Inteligentes:</strong> Explorar horarios diferenciados para actividades deportivas y tráfico vehicular pesado.</li>
-                <li><strong>Conciencia y Respeto:</strong> Lanzar campañas educativas para fomentar la empatía y el conocimiento de las normas.</li>
-                <li><strong>Rutas Alternativas:</strong> Señalizar claramente rutas alternativas para vehículos en horarios de mayor afluencia.</li>
-                <li><strong>Diálogo Abierto:</strong> Facilitar reuniones periódicas entre residentes y deportistas para construir soluciones conjuntas.</li>
+                <li><strong>Más Espacios Amplios:</strong> Si eres Deportista o residente que no cuenta con medios de transpote, intenta siempre subir y bajar por el lado derecho de la carretera, excepto en las curvas que requieran ir en sentido contrario</li>
+                <li><strong>Dias de descanso:</strong> Si eres Residente, Evita sacar tu vehiculo los fines de semana, solo en casos de emergencia. Por lo general hay un gran numero de deportistas en la zona estos dias </li>
+                <li><strong>Comunidad Digital:</strong> También te invitamos a estar atento a nuestras redes sociales, donde te mantendremos al tanto de los avances de esta iniciativa</li>
+                <li><strong>Un lugar fresco:</strong> Evite fumar, beber o ingerir cualquier tipo de sustancia tóxica o nociva</li>
                 <li><strong>Cumplimiento de Normas:</strong> Reforzar el cumplimiento de las normas de tránsito y convivencia para garantizar la seguridad.</li>
             </ul>
         </section>

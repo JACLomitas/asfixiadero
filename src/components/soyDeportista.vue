@@ -22,9 +22,9 @@ export default {
                 <h2>¿Por qué amamos este lugar?</h2>
                 <p>Este entorno es ideal para conectar con la naturaleza, mantenernos activos y recargar energías. ¡Es un tesoro que debemos proteger!</p>
 
-                <h2>Cuidemos juntos este espacio:</h2>
+                <h2 class="h2-mg">Cuidemos juntos este espacio:</h2>
                 <ul class="guidelines">
-                    <li>Mantente atento al tráfico y utiliza las aceras o senderos designados.</li>
+                    <li>Mantente atento al tráfico</li>
                     <li>Modera el volumen de tus audífonos para estar alerta a tu entorno.</li>
                     <li>Respeta las señales de tránsito y las normas de convivencia.</li>
                     <li>Deposita la basura en los contenedores adecuados.</li>
@@ -207,13 +207,30 @@ export default {
 
     .info-section {
         flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
-    .text-container {
-        width: 50%;
-    }
+       .info-section h2 {
+            font-size: 3.3rem;
+        }
+    
+
+   .text-container {
+           width: 100%;
+           text-align: center;
+           padding: 50px;
+       }
+
+       .text-container p {
+               font-size: 1.4rem;
+           }
+
+            .text-container .h2-mg {
+                   margin-top: 50px;
+               }
+
     .hero-image {
         height: 400px;
     }
@@ -221,6 +238,19 @@ export default {
     /* Asegurar que las guidelines estén alineadas a la izquierda en desktop */
     .guidelines {
         text-align: left;
+    }
+
+      .text-container ul {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 50px;
+        }
+    
+.text-container ul li {
+        font-size: 1.8rem;
     }
 }
 </style>

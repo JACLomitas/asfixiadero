@@ -23,9 +23,9 @@ export default {
                 <p>Para muchos de nosotros, los carros y las motos son la única forma de llegar al trabajo a tiempo, especialmente si vivimos en áreas más alejadas.</p>
                 <p>Necesitamos llevar a nuestros hijos a la escuela, hacer compras grandes o visitar a familiares que viven lejos. El transporte público no siempre es una opción viable.</p>
 
-                <h2>Para nosotros es fundamental seguir estas medidas de seguridad:</h2>
+                <h2 class="h2-mg">Para nosotros es fundamental seguir estas medidas de seguridad:</h2>
                 <ul class="guidelines">
-                    <li>Reduce la velocidad en zonas peatonales.</li>
+                    <li>Reducir la velocidad en zonas concurridas </li>
                     <li>Utiliza el claxon solo en caso de emergencia.</li>
                     <li>Estaciona en lugares permitidos.</li>
                 </ul>
@@ -175,12 +175,23 @@ export default {
 
     .info-section {
         flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .text-container {
-        width: 50%;
+        width: 100%;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .text-container p {
+        font-size: 1.4rem;
+    }
+
+    .text-container .h2-mg {
+        margin-top: 50px;
     }
 
     /* Asegurar que las guidelines estén alineadas a la izquierda en tablet */
@@ -189,6 +200,18 @@ export default {
     }
     .hero-image {
         height: 300px;
+    }
+
+    .text-container ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .text-container ul li {
+        font-size: 1.4rem;
     }
 }
 
@@ -204,13 +227,30 @@ export default {
 
     .info-section {
         flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+    .info-section h2 {
+        font-size: 3.3rem;
     }
 
     .text-container {
-        width: 50%;
+        width: 100%;
+        text-align: center;
+        padding: 50px;
     }
+
+    .text-container p {
+        font-size: 1.4rem;
+    }
+
+    .text-container .h2-mg {
+        margin-top: 50px;
+    }
+
     .hero-image {
         height: 400px;
     }
@@ -218,6 +258,18 @@ export default {
     /* Asegurar que las guidelines estén alineadas a la izquierda en desktop */
     .guidelines {
         text-align: left;
+    }
+
+    .text-container ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .text-container ul li {
+        font-size: 1.8rem;
     }
 }
 </style>

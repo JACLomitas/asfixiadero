@@ -77,8 +77,8 @@ export default {
     }
 
     .somos_img img {
-        width: 450px;
-        height: 450px;
+        width: 350px;
+        height: 350px;
     }
 }
 </style>
