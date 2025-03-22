@@ -6,15 +6,16 @@ export default {
 
 <template>
     <div class="somos_info_container">
-
         <div class="somos">
             <h1>¿Quienes Somos?</h1>
+        </div>
+        <div class="somos_img">
+            <img src="../../public/img/svg/howWeAre.svg" alt="" srcset="">
         </div>
         <div class="somos_info">
             <p>Somos la Junta de acción comunal, y queremos que, tanto residentes como deportistas nos unamos
                 juntos como familia y emprendamos un viaje en busca de un asfixiadero mas seguro y armonioso</p>
         </div>
-        <div class="somos_img"> <img src="../../public/img/svg/howWeAre.svg" alt="" srcset=""> </div>
     </div>
 </template>
 
@@ -30,8 +31,8 @@ export default {
     font-family: 'Arial', sans-serif;
     color: #333;
     margin: 0 auto;
-    max-width: 100%;      /* Ocupar todo el ancho en móvil */
-    padding: 1rem;       /* Reduje el padding para móvil */
+    max-width: 100%;     
+    padding: 1rem;      
     box-sizing: border-box;
 }
 
@@ -74,6 +75,7 @@ export default {
 @media (min-width: 1024px) {
     .somos_info_container {
         font-size: 1.8rem;
+        width: 80%;
     }
 
     .somos_img img {
