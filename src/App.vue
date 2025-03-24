@@ -6,23 +6,40 @@ import soyResidente from './components/soyResidente.vue'
 import soyDeportista from './components/soyDeportista.vue'
 import solucion from './components/solucion.vue'
 import footerApp from './components/footer.vue'
-</script>
 
+import { ref, onMounted } from 'vue';
+
+const scrollToSection = (sectionId) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest' // Add this for horizontal scrolling if needed
+    });
+  }
+};
+
+// Exponer la función para que el componente Navbar pueda acceder a ella
+defineExpose({
+  scrollToSection
+});
+</script>
 <template>
-    <navbar />
-    <div class="principal-info">
+    <navbar :scrollToSection="scrollToSection" />  <!-- Pasa la función como prop -->
+    <div class="principal-info" id="inicio">
         <div class="image-container">
-            <img src="../public/img/asifixiadero_slider.jpg" alt="img_prinsipal" class="principal-image">
+            <img src="../public/img/asfixiadero_slide4k_01.jpg" alt="img_prinsipal" class="principal-image">
             <div class="text-info">
                 <p>Convivencia en Movimiento Un Espacio para Todos</p>
             </div>
         </div>
     </div>
-    <info />
+    <info id="somos" />  <!-- Asegúrate de que el ID coincida con el href -->
     <quienesSomos />
-    <soyResidente />
-    <soyDeportista />
-    <solucion />
+    <soyResidente id="residentes"/> <!-- Asegúrate de que el ID coincida con el href -->
+    <soyDeportista id="deportistas" /> <!-- Asegúrate de que el ID coincida con el href -->
+    <solucion id="solucion"/> <!-- Asegúrate de que el ID coincida con el href -->
     <footerApp />
 </template>
 
@@ -58,7 +75,7 @@ import footerApp from './components/footer.vue'
 
 .principal-info .text-info {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);

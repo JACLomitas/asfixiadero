@@ -8,11 +8,11 @@ export default {
 
     <footer>
         <div class="right">
-            <p>Todos los derechos reservados | 2025</p>
+            <p>© copyright | </p>
         </div>
 
         <div class="left">
-            <p><a href="#">Jackson Florez</a></p>
+            <p><a href="https://github.com/Jacksonpirlo">Jackson Florez</a></p>
         </div>
     </footer>
 </template>
@@ -30,8 +30,14 @@ footer {
     text-align: center;
 }
 
-/* .rigth {
-    display: flex;
-    flex-direction: column;
-} */
+.right p {
+    color: white;
+}
+
+
+.left p a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
 </style>

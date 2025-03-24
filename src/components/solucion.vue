@@ -32,7 +32,7 @@ export default {
             <ul class="lista-soluciones">
                 <li><strong>Más Espacios Amplios:</strong> Si eres Deportista o residente que no cuenta con medios de transpote, intenta siempre subir y bajar por el lado derecho de la carretera, excepto en las curvas que requieran ir en sentido contrario</li>
                 <li><strong>Dias de descanso:</strong> Si eres Residente, Evita sacar tu vehiculo los fines de semana, solo en casos de emergencia. Por lo general hay un gran numero de deportistas en la zona estos dias </li>
-                <li><strong>Comunidad Digital:</strong> También te invitamos a estar atento a nuestras redes sociales, donde te mantendremos al tanto de los avances de esta iniciativa</li>
+                <li><strong>Comunidad Digital:</strong> También te invitamos a estar atento a <a href="https://www.instagram.com/asfixiadero/">nuestras redes sociales</a>, donde te mantendremos al tanto de los avances de esta iniciativa</li>
                 <li><strong>Un lugar fresco:</strong> Evite fumar, beber o ingerir cualquier tipo de sustancia tóxica o nociva</li>
                 <li><strong>Cumplimiento de Normas:</strong> Reforzar el cumplimiento de las normas de tránsito y convivencia para garantizar la seguridad.</li>
             </ul>

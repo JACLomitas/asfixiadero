@@ -9,7 +9,7 @@ export default {
 
         <section class="hero">
             <div class="hero-image-container">
-                <img src="../../public/img/deportista_demo.jpg" alt="Deportista caminando" class="hero-image">
+                <img src="../../public/img/deportista_01.jpg" alt="Deportista caminando" class="hero-image">
                 <div class="hero-content">
                     <h1>Deportistas y Visitantes</h1>
                     <p>¡Bienvenido! Disfruta y cuida este espacio natural que tanto amamos.</p>
@@ -69,9 +69,13 @@ export default {
 
 .hero-image {
     width: 100%;
-    height: 250px;       /* Reduje la altura para móvil */
+    height: 250px;   
     object-fit: cover;
-    filter: brightness(70%);
+    filter: brightness(50%);
+}
+
+.hero-image-container img {
+    border-radius: 20px 10px 30px 10px;
 }
 
 .hero-content {
@@ -87,13 +91,13 @@ export default {
 }
 
 .hero-content h1 {
-    font-size: 2rem;      /* Reduje el tamaño de fuente para móvil */
+    font-size: 2rem;     
     font-weight: bold;
-    margin-bottom: 0.5rem; /* Reduje el margen inferior para móvil */
+    margin-bottom: 0.5rem;
 }
 
 .hero-content p {
-    font-size: 1rem;      /* Reduje el tamaño de fuente para móvil */
+    font-size: 1rem;
 }
 
 /* Info Section */
@@ -102,8 +106,8 @@ export default {
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
-    padding: 1.5rem;      /* Reduje el padding para móvil */
-    max-width: 100%;     /* Ocupar todo el ancho en móvil */
+    padding: 1.5rem;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -113,30 +117,30 @@ export default {
 }
 
 .text-container h2 {
-    font-size: 1.7rem;    /* Reduje el tamaño de fuente para móvil */
+    font-size: 1.7rem;
     color: #212529;
-    margin-bottom: 0.7rem; /* Reduje el margen inferior para móvil */
+    margin-bottom: 0.7rem;
 }
 
 .text-container p {
-    font-size: 1rem;      /* Reduje el tamaño de fuente para móvil */
+    font-size: 1rem;      
     line-height: 1.5;
     color: #495057;
-    margin-bottom: 1rem;   /* Reduje el margen inferior para móvil */
+    margin-bottom: 1rem;
 }
 
 .guidelines {
     list-style: none;
     padding: 0;
-    margin-bottom: 1rem;   /* Reduje el margen inferior para móvil */
+    margin-bottom: 1rem;
 }
 
 .guidelines li {
-    padding: 0.4rem 0;    /* Reduje el padding vertical para móvil */
+    padding: 0.4rem 0;
     border-bottom: 1px solid #dee2e6;
     position: relative;
-    padding-left: 1.8rem;  /* Reduje el espacio para el "check" para móvil */
-    font-size: 1rem;      /* Reduje el tamaño de fuente para móvil */
+    padding-left: 1.8rem;  
+    font-size: 1rem;
 }
 
 .guidelines li::before {
@@ -147,22 +151,26 @@ export default {
     transform: translateY(-50%);
     color: #28a745;
     font-weight: bold;
-    font-size: 1.2rem;  /* Reduje el tamaño de fuente para móvil */
+    font-size: 1.2rem;
 }
 
 .respeto-mutuo {
-    padding: 1rem;       /* Reduje el padding para móvil */
+    padding: 1rem;
     background-color: #f1f5f9;
     border-radius: 8px;
 }
 
 .respeto-mutuo h2 {
-    font-size: 1.7rem;    /* Reduje el tamaño de fuente para móvil */
-    margin-bottom: 0.7rem; /* Reduje el margen inferior para móvil */
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
 }
 
 .respeto-mutuo p {
-    font-size: 1rem;      /* Reduje el tamaño de fuente para móvil */
+    font-size: 1rem;
+}
+
+.respeto-mutuo p {
+    font-size: 1rem;
 }
 
 /* Media Queries para Responsividad */
@@ -186,7 +194,7 @@ export default {
         width: 50%;
     }
 
-    /* Asegurar que las guidelines estén alineadas a la izquierda en tablet */
+
     .guidelines {
         text-align: left;
     }
@@ -218,29 +226,28 @@ export default {
     
 
    .text-container {
-           width: 100%;
-           text-align: center;
-           padding: 50px;
-       }
+     width: 100%;
+     text-align: center;
+     padding: 50px;
+    }
 
-       .text-container p {
-               font-size: 1.4rem;
-           }
+    .text-container p {
+            font-size: 1.4rem;
+        }
 
-            .text-container .h2-mg {
-                   margin-top: 50px;
-               }
+    .text-container .h2-mg {
+    margin-top: 50px;
+    }
 
     .hero-image {
         height: 400px;
     }
 
-    /* Asegurar que las guidelines estén alineadas a la izquierda en desktop */
     .guidelines {
         text-align: left;
     }
 
-      .text-container ul {
+    .text-container ul {
             display:flex;
             flex-direction: row;
             justify-content: space-between;

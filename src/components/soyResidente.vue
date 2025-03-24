@@ -9,7 +9,7 @@ export default {
 
         <section class="hero">
             <div class="hero-image-container">
-                <img src="../../public/img/justest.jpeg" alt="Vehículos en Sabaneta" class="hero-image">
+                <img src="../../public/img/comunidad_02.jpg" alt="Vehículos en Sabaneta" class="hero-image">
                 <div class="hero-content">
                     <h1>Residentes</h1>
                     <p>Tu movilidad es nuestra prioridad</p>
@@ -70,6 +70,10 @@ export default {
     height: 250px;       /* Reduje la altura para móvil */
     object-fit: cover;
     filter: brightness(60%);
+}
+
+.hero-image-container img {
+    border-radius: 20px 10px 30px 10px;
 }
 
 .hero-content {
@@ -154,12 +158,12 @@ export default {
 }
 
 .compromiso h2 {
-    font-size: 1.7rem;    /* Reduje el tamaño de fuente para móvil */
+    font-size: 1rem;    /* Reduje el tamaño de fuente para móvil */
     margin-bottom: 0.7rem; /* Reduje el margen inferior para móvil */
 }
 
 .compromiso p {
-    font-size: 1rem;      /* Reduje el tamaño de fuente para móvil */
+    font-size: 0.5rem;      /* Reduje el tamaño de fuente para móvil */
 }
 
 /* Media Queries para Responsividad */

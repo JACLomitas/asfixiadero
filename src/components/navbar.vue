@@ -1,10 +1,16 @@
 <script>
 export default {
-    name: 'navbar'
+    name: 'navbar',
+    props: {
+        scrollToSection: {
+            type: Function,
+            required: true // Indica que este prop es obligatorio
+        }
+    }
 }
 </script>
 
-<template>
+<template id="inicio">
 <nav class="navbar navbar-expand-lg bg-light fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#inicio"> <img src="../../public/img/JAC.png" alt="" srcset=""> Asfixiadero de Todos</a>
@@ -13,11 +19,11 @@ export default {
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                <a class="nav-link" href="#somos">Somos</a>
-                <a class="nav-link" href="#residentes">Residentes</a>
-                <a class="nav-link" href="#deportistas">Deportistas</a>
-                <a class="nav-link" href="#solucion">Solución</a>
+                <a class="nav-link active" aria-current="page" href="#inicio" @click.prevent="scrollToSection('inicio')">Inicio</a>
+                <a class="nav-link" href="#somos" @click.prevent="scrollToSection('somos')">Somos</a>
+                <a class="nav-link" href="#residentes" @click.prevent="scrollToSection('residentes')">Residentes</a>
+                <a class="nav-link" href="#deportistas" @click.prevent="scrollToSection('deportistas')">Deportistas</a>
+                <a class="nav-link" href="#solucion" @click.prevent="scrollToSection('solucion')">Solución</a>
             </div>
         </div>
     </div>
@@ -43,6 +49,10 @@ export default {
 .navbar.fixed-top {
     background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto flotante */
+}
+
+.navbar-brand {
+    margin-right: 10px;
 }
 
 .navbar img {
